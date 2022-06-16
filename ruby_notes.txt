@@ -1,0 +1,168 @@
+Ruby notes
+#Enumerable
+we have enumerables
+countable items
+arrays
+ranges and hashes
+
+strings are sort of enumberable, but with time this changed. 
+
+Module name: enumerable
+"mixes in enumerables"
+
+Methods: 
+- count
+- each (for iteration)
+
+#Code blocks
+
+They use 'do' and 'end' as their delimiters
+
+Ruby Convention
+Curly bracket for single line blocks, blocks that return data, or no changes
+Do-end format is used for multiline code blocks and blocks that perform actions or make changes. 
+
+Block variable example |i|, it works for single line and multiline blocks
+
+We can use |k,v| where k is key, and v is value. This is a ruby convention
+
+Variable scope indicators
+
+global: $variable
+class: @@variable
+instance: @variable
+local: variable
+block: variable
+
+- Many ruby methods will accept an optional code block
+- Code blocks tend to modify default behaviour
+- check documentation
+- we can write custom methods that accept code blocks
+
+#The Find method
+
+These are
+-  find and detect
+- find_all and select
+- any? and none? 
+- all and one
+- delete_if
+
+splat notation = [*1..10] to create a set with numbers from 1 to 10 for example.
+
+#Map methods
+
+- map and collect
+
+- they iterate throuhg an inumerable and they process each item with the desired code block
+
+adds the result of the code block's actions to a new array. 
+
+The same number of items is returned as goes in
+
+map returns an array of the results, so a hash would become an array. 
+To create a new hash you would use each, and recreate the hash. 
+
+map! and collect! = more powerful or destructive. It replaces the existing array. 
+
+#Inject Methods
+
+You can inject or reduce
+
+They include an accumulator
+
+block variable required
+
+ruby convention: memo
+
+in JS we call the accumulator acc but memo serves the same purpose
+
+#Comparison operator
+- sort methods use the comparison operator
+- symbol: <=>
+- nickname "spaceship operator"
+
+compare value 1 with value 2
+
+What it returns
+
+-1 for less than
+0 is equal
+1 is more than
+
+Example
+
+1 <=> 2 = -1
+2 <=> 1 = 1
+2 <=> 2 = 0
+
+This seems irrational if we think of it in terms of boolean true or false but it is rational if we think about sorting. Is this bigger than that. If yes then this one moves that way. If they are of the same size then leave them as is. etc. 
+
+Do not think of this as boolean logic because it isn't. 
+-1 moves left
++1 moves right
+and 0 does not move. 
+
+## sort and sort by
+
+## Sorting hashes
+it will return an array
+
+## Merge 
+Only used to merge hashes
+use a block to control the rules when merging
+hashOne
+HashTwo
+
+hashOne.merge(hashTwo)
+
+As usual merge! exists to force something
+
+example
+
+hjkl for navigation
+
+:2 to go to line 2
+
+G to go to the bottom of the file
+
+gg to go to the top
+
+:wq to quit
+:q! to hard quit.
+
+Naviation continued
+
+end of line command $
+
+0 to get to the front of the line
+
+Navigatie back one word at a time: b
+Navigate forward one word at a time: w
+
+type f and c to say "move forward to the letter c
+
+insert mode with i
+
+command mode to save etc. 
+I to type at the beginning of the line
+A to type at the end of the line
+
+R for replace
+
+Replace mode is overwrite mode. 
+
+Visual mode 
+
+# def some_method
+# 	puts "hello world"
+# end
+
+ctrl v for block mode
+
+go to the start of the line, press j to select the first character of the lines. Then press I and #. Press esc and pound is added at the start of each line. 
+
+
+
+
+
