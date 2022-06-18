@@ -162,6 +162,67 @@ ctrl v for block mode
 
 go to the start of the line, press j to select the first character of the lines. Then press I and #. Press esc and pound is added at the start of each line. 
 
+set nu for numbers
+
+:set visualbell
+
+:set backspace=indent,eol,start
+
+cw to remove a single word. 
+
+C to replace everything to the right
+
+Use u to undo what was done before. 
+
+This is a test to see whether it just deletes this text.
+
+Ctrl R to redo something
+
+With cit I we can remove all text within a set of tags when editing html
+
+In other languages we can use ci as well. We can type ci{ and it removes the content within
+
+With this we can clear the internals of a function with ease. 
+
+Within "" we can run ci" and we will remove whatever is within the "". This allows for quick editing, 
+
+Copy and Paste - 
+
+yank and deleting as concepts
+
+y to yank and p to paste
+
+Double y to yank an entire line
+
+This is a quick test to grab a line of text
+
+y - yank single word or element
+yy - yank entire line
+d - cut/delete selected element
+dd - cut entire line
+
+Pasting in VIM
+When you select multiple lines they count as a single element
+
+In Vim, ensure you are command mode by hitting the Esc key.
+Type “:set paste” to enter command mode.
+Type “i” to enter paste mode. Notice the “– INSERT (paste) –” at the bottom of the Vim window.
+Paste your Python code into Vim. ...
+To exit paste mode, type “:set nopaste”.
+
+Deleting options
+
+d - deletes one word
+
+dd - deletes the entire line
+
+cw - delete word
+
+d + n to delete specific number of lines
+
+d$ to cut and paste text 
+
+also see: https://github.com/jordanhudgens/vim-settings/blob/master/vim-cheat-sheet.md
 
 
 
