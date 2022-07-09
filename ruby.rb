@@ -12,6 +12,17 @@ def new_indent
 
       puts "text"
 
+
+puts "A string"
+
+p "A string"
+
+p 'A Duck'
+
+puts ["a", "b", "c"]
+p ["a", "b", "c"]
+
+
 #ctrl v
 # selected lines
 # shift + I

@@ -210,10 +210,10 @@ Type “i” to enter paste mode. Notice the “– INSERT (paste) –” at the
 Paste your Python code into Vim. ...
 To exit paste mode, type “:set nopaste”.
 
-Deleting options
+## Deleting options
 
 d - deletes one word
-
+d0 - delete from cursor position to beginning of line
 dd - deletes the entire line
 
 cw - delete word
@@ -223,6 +223,59 @@ d + n to delete specific number of lines
 d$ to cut and paste text 
 
 also see: https://github.com/jordanhudgens/vim-settings/blob/master/vim-cheat-sheet.md
+
+## Advanced deleting
+
+Use relative numbers when cutting or pasting lines. 
+
+Deleting all items in a file that start with a pattern: :g/< search term>/d
+
+ggVG - select all
+
+Deleting all items in a file that start with a pattern: :g/< search term>/d
+
+:%s/shortClass/AwesomeClass - Find and replace
+
+dt = shortClass.new
+dt = shortClass.new
+dt = shortClass.new
+dt = shortClass.new
+dt = shortClass.new
+dt = shortClass.new
+dt = shortClass.new
+dt = shortClass.new
+
+to add manual indentation you type >> to indent
+
+ctrl + ww to switch between window panes
+
+ctrl + w + hjkl to navigate between window panes
+
+Pane size customisation
+
+, [ or ] to shrink of expand panes
+
+:e Edit a file in a new buffer
+
+ctrl z to suspend job. 
+
+fg to bring the latest job back
+
+jobs to see jobs
+
+fg % and then the job number
+
+,b to run ruby in vim
+
+ctrl p and enter for default behaviour
+
+ctrl p and ctrl + ctrl v // double check this hint. 
+
+ctrl p and ctrl x to stack
+
+ctrl p and ctrl v to have a vertical split
+
+look up macros
 
 
 
