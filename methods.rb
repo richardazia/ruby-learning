@@ -286,7 +286,7 @@ registration(
   email: "richard@example.com",
   password: "diligiaf2022",
   role: "admin",
-  plan "The Super Awesome plan"
+  plan: "The Super Awesome plan"
 ) #
 
 
