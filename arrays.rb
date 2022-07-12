@@ -66,8 +66,58 @@ p people.keys
 
 p people.values
 
+x = 10
+y = 5
 
+# const compare = if x == y
+#   puts "x is the same as y"
+# else
+#   puts "x and y are not the same"
+# end
 
+# p compare
 
+birds = ["ducks", "crows", "swans"]
+
+# unless birds.empty?
+# 	birds.each { |bird| puts bird }
+# end
+#
+birds.each { |bird| puts bird } unless birds.empty?
+
+birds.each { |bird| puts bird } if !birds.empty?
+
+x = 10
+y = 100
+z = 10
+
+if x == y
+  puts "x is equal to y"
+elsif x > y
+  puts "x is greater than y"
+else
+  puts "something else"
+end
+
+# unfamiliar way of doing things
+if x != y
+  if x = z
+    puts "equal to something"
+  end
+end
+
+# Familiar way of doing things
+
+if x == y && x == z
+  puts "from the if statement"
+end
+
+if x == y || x == z
+	puts "from the if statement"
+end
+
+if (x == 10 && x == z) || x == y
+  puts "using parantheses"
+end
 
 
