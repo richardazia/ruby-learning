@@ -8,6 +8,11 @@ class ApiConnector
     secret_method
   end
 
+  def api_logger
+    puts "Establishing API connection..."
+    puts "You might have time to complete a full blink of the eyes."
+  end
+
   private
 
   def secret_method
@@ -28,6 +33,10 @@ class SmsConnector < ApiConnector
 end
 
 class PhoneConnector < ApiConnector
+  def api_logger
+    super #run parent method and then run the current one. 
+    puts "Phone connector booting"
+  end
   def send_phone_call
     puts "Connecting phone call..."
   end
@@ -47,5 +56,9 @@ phone = PhoneConnector.new("A very good title", "an awesome description", "http:
 # email = MailConnector.new("A very good title", "an awesome description", "twitter.com")
 
 # sms.send_sms
-phone.send_phone_call
+phone.api_logger
 # email.send_email
+#
+# Polymporphism
+#
+#
